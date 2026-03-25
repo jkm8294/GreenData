@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #0f1117;
+  --foreground: #e4e4e7;
+  --card: #1a1b23;
+  --card-border: #2a2b35;
+  --accent: #22c55e;
+  --accent-dim: #16a34a;
+  --warning: #eab308;
+  --danger: #ef4444;
+  --muted: #71717a;
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: var(--font-geist-sans), system-ui, sans-serif;
+}
+
+/* Mapbox overrides */
+.mapboxgl-popup-content {
+  background: var(--card) !important;
+  color: var(--foreground) !important;
+  border: 1px solid var(--card-border) !important;
+  border-radius: 8px !important;
+  padding: 12px !important;
+}
+.mapboxgl-popup-tip {
+  border-top-color: var(--card) !important;
+}

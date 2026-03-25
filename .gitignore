@@ -1,0 +1,32 @@
+# Environment
+.env
+.venv/
+venv/
+__pycache__/
+*.pyc
+
+# Raw & processed data (too large for git)
+data/raw/
+data/processed/
+data/reference/
+
+# Outputs (generated at runtime)
+outputs/*.png
+outputs/*.csv
+outputs/*.json
+
+# Validation data (exported from code)
+data/validation/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Node (frontend)
+node_modules/
+.next/
